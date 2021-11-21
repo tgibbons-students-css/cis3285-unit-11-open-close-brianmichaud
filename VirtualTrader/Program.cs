@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AbstractTrader;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -14,7 +15,7 @@ namespace VirtualTrader
             var tradeStream = Assembly.GetExecutingAssembly().GetManifestResourceStream("VirtualTrader.trades4.txt");
 
             //var tradeProcessor = new TradeProcessor();
-            TradeProcessor tradeProcessor = new TradeProcessorVersion2();
+            ITradeProcessor tradeProcessor = new TradeProcessorVersion2();
 
             // ============= do not change anything below this line =============
             tradeProcessor.ProcessTrades(tradeStream);

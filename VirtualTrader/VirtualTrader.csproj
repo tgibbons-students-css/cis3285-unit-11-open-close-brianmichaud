@@ -53,6 +53,12 @@
   <ItemGroup>
     <EmbeddedResource Include="trades4.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AbstractTrader\AbstractTrader.csproj">
+      <Project>{6197BEB6-A10C-4D44-A322-6E2684855981}</Project>
+      <Name>AbstractTrader</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
